@@ -6,6 +6,7 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
+        "firebase/php-jwt": "^3.0.0",
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/jetstream": "^5.3",
@@ -28,6 +29,10 @@
             "Database\\Seeders\\": "database/seeders/"
         }
     },
+     "files": [
+           "app/Helpers/JwtAuth.php"
+       ],
+
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
